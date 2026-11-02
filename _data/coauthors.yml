@@ -1,0 +1,6 @@
+# Add co-authors here to auto-link their names on the publications page.
+# Example:
+# "singhvi":
+#   - firstname: ["Gautam", "G."]
+#     url: https://link-to-their-page
+{}

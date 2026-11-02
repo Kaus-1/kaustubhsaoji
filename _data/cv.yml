@@ -1,0 +1,135 @@
+cv:
+  name: Kaustubh Saoji
+  label: Computational Protein & Peptide Design
+  email: ksaoji@purdue.edu
+  location: West Lafayette, IN, USA
+  summary: >
+    Computational biologist and dual-degree student working on de novo protein and peptide
+    design. Thesis researcher at the Purdue Institute for Drug Discovery, with a background
+    spanning generative models, molecular modeling, machine learning and the wet lab.
+
+  social_networks:
+    # - network: GitHub
+    #   username: YOUR-GITHUB-USERNAME
+    # - network: LinkedIn
+    #   username: YOUR-LINKEDIN-HANDLE
+
+  sections:
+    Education:
+      - institution: Birla Institute of Technology and Science (BITS), Pilani — K K Birla Goa Campus
+        location: Goa, India
+        area: M.Sc. (Hons.) Biological Sciences & B.E. Electrical and Electronics Engineering
+        studyType: Dual Degree
+        start_date: 2022-08
+        end_date: 2027-05
+        highlights:
+          - "Cumulative GPA: 7.44 / 10"
+          - "Merit-cum-need scholarship (40% tuition) for ranking in the top 6% of the batch"
+
+      - institution: Namo Rims International School and College
+        location: Pune, India
+        area: Higher Secondary Certificate (Science)
+        studyType: HSC
+        start_date: 2020-12
+        end_date: 2022-06
+        highlights:
+          - "84%"
+
+    Experience:
+      - company: Purdue Institute for Drug Discovery, Purdue University
+        position: Undergraduate Thesis Researcher — Generative AI for Peptide Design
+        location: West Lafayette, IN, USA
+        start_date: 2026-08
+        summary: "Advisor: Dr. Madduri Srinivasarao. On-campus advisor: Dr. Raviprasad Aduri (BITS Goa)."
+        highlights:
+          - De novo design of peptide candidates for immunotherapy.
+          - Applying generative and structure models (BoltzGen, Boltz-2, AlphaFold, RFpeptides) to generate and evaluate peptide designs and predicted peptide–target interactions.
+          - Building an in silico workflow for peptide generation, structure prediction, and candidate prioritisation for downstream validation.
+
+      - company: BITS Pilani, K K Birla Goa Campus
+        position: Ab Initio Modeling for Molecular Discovery
+        location: Goa, India
+        start_date: 2025-12
+        summary: "Advisor: Prof. Raviprasad Aduri."
+        highlights:
+          - Optimised molecular geometries and electronic properties across the QM9/QM40 datasets using GAMESS and Avogadro.
+          - Identified structural overlaps between QM datasets and FDA-approved drugs (via SMILES/InChI) for drug repurposing.
+          - Ran molecular docking with AutoDock Vina to compare binding affinities of FDA-approved antivirals and phytochemicals against viral targets.
+
+      - company: BITS Pilani, K K Birla Goa Campus
+        position: Energy-Efficient Spiking Neural Networks for Seizure Detection
+        location: Goa, India
+        start_date: 2025-05
+        summary: "Advisor: Prof. Debasis Das."
+        highlights:
+          - Applied STDP and surrogate-gradient methods to train SNNs on EEG datasets.
+          - Designed temporal coding schemes to capture spatio-temporal EEG features for seizure prediction.
+          - Evaluated the event-driven efficiency of SNNs against conventional deep-learning models.
+
+      - company: CSIR – Central Electronic Engineering Research Institute (CEERI)
+        position: Summer Research Intern
+        location: Pilani, India
+        start_date: 2024-05
+        end_date: 2024-07
+        highlights:
+          - Co-authored a review on cold atmospheric plasma for skin cancer, published in Drug Discovery Today (Q1).
+          - Investigated apoptotic and molecular pathways in skin cancer, benchmarking conventional therapies against cold-plasma-induced apoptosis.
+          - Contributed to the design of portable cold-plasma prototype devices for dermatological application.
+
+      - company: BITS Pilani, K K Birla Goa Campus
+        position: High-Purity Transcriptomic Isolation from Horseshoe Crabs
+        location: Goa, India
+        start_date: 2024-01
+        end_date: 2024-05
+        summary: "Advisor: Prof. Sumit Biswas."
+        highlights:
+          - Studied transcriptome variation across horseshoe crab developmental stages.
+          - Achieved 300 ng/µL RNA yield from Tachypleus gigas with a modified CTAB method, outperforming commercial kits (A260/A280 ≈ 2.0).
+          - Increased total RNA yield ~5× over the standard TRIzol protocol.
+
+    Publications:
+      - title: "Harnessing cold atmospheric plasma for skin cancer: a non-invasive breakthrough in plasma medicine"
+        authors:
+          - Vaibhavi Meghraj Desai
+          - Souradeep Dutta
+          - Kaustubh Saoji
+          - "et al."
+        publisher: Drug Discovery Today
+        releaseDate: 2025-11
+        url: https://doi.org/10.1016/j.drudis.2025.104491
+        summary: "Vol. 30(11), 104491. Review article (Q1 journal)."
+
+    Awards:
+      - title: 7th place worldwide — International Rover Challenge 2025
+        date: 2025-03
+        summary: As Science Lead of BITS Goa's Mars rover team, Project Kratos.
+      - title: Merit-cum-need scholarship (40% tuition)
+        date: 2022
+        summary: Awarded for ranking in the top 6% of the batch at BITS Pilani.
+      - title: Top 3% nationally — JEE Main
+        date: 2022
+        summary: One of India's most competitive engineering entrance examinations.
+
+    Leadership and Service:
+      - bullet: "**Science Lead**, Project Kratos — BITS Goa Mars Rover Team (2024–2025): led and mentored 50+ members in astrobiology research and life-detection experiments, and built ML pipelines for autonomous rock detection and classification."
+      - bullet: "**Student Faculty Member**, Department of Biological Sciences, BITS Goa (2024–2025): represented student concerns in departmental decision-making alongside faculty."
+      - bullet: "**Volunteer Teacher**, Nirmaan, BITS Goa (2022–2024): taught middle-school mathematics and science to children from an under-resourced community near campus."
+      - bullet: "**Mentor**, Academic Assistance Program, BITS Goa (2023): mentored first-year students in General Biology."
+
+    Skills:
+      - label: Protein & molecular design
+        details: BoltzGen, Boltz-2, AlphaFold, RFpeptides, AutoDock Vina, GAMESS, Avogadro
+      - label: Machine learning
+        details: PyTorch, TensorFlow, spiking neural networks (SNN/CSNN), GNNs, BLSTMs, classical ML
+      - label: Programming & tools
+        details: Python (NumPy, Pandas, scikit-learn, Matplotlib, Seaborn), Git/GitHub, Linux, HPC
+      - label: Wet lab
+        details: PCR, qPCR, RNA extraction (CTAB), SDS-PAGE, sequence analysis, horseshoe crab embryo handling
+
+    Languages:
+      - label: English
+        details: Professional
+      - label: Hindi
+        details: Native
+      - label: Marathi
+        details: Native

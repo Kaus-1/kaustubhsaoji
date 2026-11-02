@@ -1,0 +1,178 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/*******************************************************************************
+ * Kaustubh's customisations — "bio" accent theme
+ * (appended to the al_folio_core main.scss; everything above is upstream)
+ ******************************************************************************/
+
+:root {
+  --global-theme-color: #0f766e; /* teal-700 */
+  --global-hover-color: #0d9488;
+  --global-highlight-color: #b45309;
+  --bio-accent-2: #6366f1; /* indigo, used sparingly */
+  --bio-soft: rgba(15, 118, 110, 0.08);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #2dd4bf; /* teal-400 */
+  --global-hover-color: #5eead4;
+  --global-highlight-color: #fbbf24;
+  --bio-accent-2: #a5b4fc;
+  --bio-soft: rgba(45, 212, 191, 0.1);
+}
+
+/* ---- Animated protein cartoon (helix / strand / loop) on the home page ---- */
+.bb-hero {
+  /* flow-root makes the banner shrink beside a floated profile photo instead of being pushed below it */
+  display: flow-root;
+  margin: 0.25rem 0 1.75rem;
+  line-height: 0;
+}
+.bb-hero svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  clip-path: inset(0 100% 0 0);
+  animation: bb-reveal 2.4s cubic-bezier(0.65, 0, 0.35, 1) 0.15s forwards;
+}
+.bb-loop,
+.bb-helix,
+.bb-helix-back {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.bb-loop {
+  stroke: var(--global-text-color-light);
+  stroke-width: 2.5;
+  opacity: 0.7;
+}
+.bb-helix {
+  stroke: var(--global-theme-color);
+  stroke-width: 9;
+}
+.bb-helix-back {
+  stroke: var(--global-theme-color);
+  stroke-width: 6;
+  opacity: 0.35;
+}
+.bb-strand {
+  fill: var(--bio-accent-2);
+  opacity: 0.85;
+  stroke: var(--global-bg-color);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+@keyframes bb-reveal {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bb-hero svg {
+    animation: none;
+    clip-path: none;
+  }
+}
+
+/* ---- Research-interest chips ---- */
+.interest-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0.75rem 0 1.25rem;
+  list-style: none;
+}
+.interest-chips li {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 999px;
+  background: var(--bio-soft);
+  color: var(--global-text-color);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* ---- Small accent bar on section headings inside pages ---- */
+.post article h2,
+.post article h3.section-title {
+  position: relative;
+}
+.post article > .clearfix h3 {
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--global-theme-color);
+}
+
+/* ---- Home page call-to-action buttons ---- */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0 0.5rem;
+}
+.cta-row a {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--global-theme-color);
+  color: var(--global-theme-color);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.cta-row a:hover,
+.cta-row a.primary {
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+}
+.cta-row a.primary:hover {
+  background: var(--global-hover-color);
+}
+
+/* ---- Project pages: key facts box ---- */
+.project-facts {
+  margin: 1rem 0 1.5rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 0.6rem;
+  background: var(--bio-soft);
+  border-left: 3px solid var(--global-theme-color);
+  font-size: 0.92rem;
+}
+.project-facts p {
+  margin: 0.15rem 0;
+}
