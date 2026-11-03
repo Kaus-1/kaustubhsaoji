@@ -195,3 +195,23 @@ footer.sticky-bottom a:hover {
   color: var(--global-hover-color);
   text-decoration: underline;
 }
+
+/* ---- Home page: small social icons next to the name ---- */
+.post-title .header-socials {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: 0.9rem;
+  font-size: 1.15rem;
+  font-weight: normal;
+  vertical-align: middle;
+}
+.post-title .header-socials a {
+  color: var(--global-text-color-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.post-title .header-socials a:hover {
+  color: var(--global-theme-color);
+}

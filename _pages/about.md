@@ -14,10 +14,10 @@ profile:
   more_info: >
     <p>Madduri Lab, Purdue University</p>
     <p>West Lafayette, IN, USA</p>
-    <p>ksaoji@purdue.edu</p>
+    <p>kaustubhsaoji@gmail.com</p>
 
 selected_papers: true # lists papers marked selected={true} in _bibliography/papers.bib
-social: true # social icons at the bottom of the page
+social: true # small social icons next to your name
 
 announcements:
   enabled: true # shows the news feed (files in _news/)
@@ -83,5 +83,5 @@ In a PhD, I want to work on **making generative protein design more reliable**: 
   <a class="primary" href="{{ '/assets/pdf/Kaustubh_Saoji_CV.pdf' | relative_url }}">Download CV (PDF)</a>
   <a href="{{ '/projects/' | relative_url }}">Projects</a>
   <a href="{{ '/publications/' | relative_url }}">Publications</a>
-  <a href="mailto:ksaoji@purdue.edu">Get in touch</a>
+  <a href="mailto:kaustubhsaoji@gmail.com">Get in touch</a>
 </div>

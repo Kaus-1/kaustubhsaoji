@@ -1,10 +1,10 @@
-# Social links shown at the bottom of the home page (in this order).
+# Social links shown as small icons next to your name on the home page (in this order).
 # Uncomment and fill in the ones you have. Docs: https://github.com/george-gca/jekyll-socials
-email: kbsaoji@gmail.com
+email: kaustubhsaoji@gmail.com
 github_username: Kaus-1
 linkedin_username: kaustubh-saoji-3648a024a # the part after linkedin.com/in/
 # orcid_id: 0000-0000-0000-0000
-scholar_userid: user=bMUeY6UAAAAJ&hl=en # Google Scholar ID (the "user=" part of your profile URL)
+scholar_userid: bMUeY6UAAAAJ # Google Scholar ID (the "user=" part of your profile URL)
 # x_username: YOUR-X-HANDLE
 # bluesky_url: https://bsky.app/profile/YOUR-HANDLE
 cv_pdf: /assets/pdf/Kaustubh_Saoji_CV.pdf
