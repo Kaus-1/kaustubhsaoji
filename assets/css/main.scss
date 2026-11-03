@@ -176,3 +176,22 @@ html[data-theme="dark"] {
 .project-facts p {
   margin: 0.15rem 0;
 }
+
+/* ---- Footer: sits at the very end of the page, on the page background ---- */
+footer.sticky-bottom {
+  margin-top: 3rem;
+  padding: 1.5rem 0 2rem;
+  background: transparent;
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 0.8rem;
+}
+footer.sticky-bottom .container {
+  color: var(--global-text-color-light);
+}
+footer.sticky-bottom a {
+  color: var(--global-theme-color);
+}
+footer.sticky-bottom a:hover {
+  color: var(--global-hover-color);
+  text-decoration: underline;
+}
